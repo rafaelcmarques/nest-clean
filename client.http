@@ -29,5 +29,16 @@ POST {{baseUrl}}/questions
 Content-type: application/json
 Authorization: Bearer {{authToken}}
 
+{
+  "title": "Nova pergunta 2",
+  "content": "conteudo da pergunta 2"
+}
+
+###
+
+# @name fetch_recent_questions
+GET {{baseUrl}}/questions?page=1
+Content-type: application/json
+Authorization: Bearer {{authToken}}
 
 
